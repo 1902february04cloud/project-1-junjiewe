@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project1</title>
+
+    <!-- ICON -->
+    <link rel="icon" href="images/lambda.png" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
+    <!-- Boostrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    
+    <!-- Boostrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" href="css/demo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi:700" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <strong class="navbar-brand">Welcome to Chris's Website</strong>
+            </div>
+        </div>
+    </nav>
+
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Simple Calculator</h3>
+            </div>
+            <div class="form-group">
+                <input id="number1" type="text" placeholder="Enter Number 1" class="form-control" />
+                <input id="number2" type="text" placeholder="Enter Number 2" class="form-control" />
+                <input id="operation" type="text" placeholder="Enter Operations: +, -, *, /, % and ^ " type="text" class="form-control">
+            </div>
+            <div id="calculateMessage" class="response-center"></div>
+            <button id="calculate" class="btn btn-md btn-success btn-block">Calculate</button>
+        </div>
+    </div>
+
+    <!-- Insert data into database -->
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Please Insert Your Favorite Laptop Into The Data</h3>
+            </div>
+            <div class="form-group">
+                <input type="text" id="brand" placeholder="Enter the Brand of the Laptop" class="form-control" />
+                <input type="text" id="name" placeholder="Enter the Name of the Laptop" class="form-control" />
+                <input type="text" id="size" placeholder="Enter the Size of Laptop" class="form-control" />
+                <input type="text" id="startingprice" placeholder="Enter the StaringPrice of Laptop" class="form-control" />
+            <div id="createLaptopMessage" class="response-center"></div>
+            <button id="create" class="btn btn-md btn-success btn-block">Upload Data</button>
+            </div>
+        </div>
+    </div> 
+
+    <!-- List All -->
+    <div class="col-md-4 col-md-offset-4" >
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Acquire All Laptops On The List</h3>
+            </div>
+            <div>
+                <ul id="tableList" class="list-group"></ul>
+            </div>
+            <button id="list" class="btn btn-md btn-success btn-block btn-list">GET Laptop List</button>
+        </div>
+    </div>
+
+    <!-- Get an image from S3 -->
+    <div class="col-md-4 col-md-offset-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3>Check Out Few Laptop Images</h3>
+            </div>
+            <div>
+                <input type="text" id="laptopinput" placeholder="Type 'Razer', 'Alien' or 'Mac' to see the Image" class="form-control"/>
+            </div>
+            <div id="image" class="list-group"></div>
+            <button id="getImage" class="btn btn-md btn-success btn-block btn-list">Check Image</button>
+        </div>
+    </div>
+        
+
+    <!-- JavaScript -->
+    <script src="js/calculator.js"></script>
+    <script src="js/create-laptop.js"></script>
+    <script src="js/list-table.js"></script>
+    <script src="js/showImage.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
